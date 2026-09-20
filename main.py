@@ -20,7 +20,7 @@ app = FastAPI(
 )
 
 
-# Register exception handlers
+
 app.add_exception_handler(
     StudentNotFoundException,
     student_not_found_handler
@@ -41,8 +41,6 @@ app.add_exception_handler(
     general_exception_handler
 )
 
-
-# Register routers
 app.include_router(students_router)
 
 
