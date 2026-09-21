@@ -1,10 +1,7 @@
 from schemas.student import StudentCreate, StudentUpdate, StudentPatch
 
-
-# In-memory data store
 students = {}
 
-# Used to generate unique student IDs
 next_student_id = 1
 
 

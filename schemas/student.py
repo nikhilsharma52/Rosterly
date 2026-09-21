@@ -1,9 +1,7 @@
 from pydantic import BaseModel, EmailStr, Field
 from typing import Optional, Literal
 
-
 Department = Literal["CSE", "ECE", "MECH", "CIVIL"]
-
 
 class StudentCreate(BaseModel):
     name: str = Field(..., min_length=2, max_length=50)
